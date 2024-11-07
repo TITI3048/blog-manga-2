@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>One Piece - Blog Manga</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .video-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            max-width: 560px;
+            height: 315px;
+            border: none;
+        }
+
+        .personnage-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between; 
+            gap: 20px;
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .personnage-list li {
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+            text-align: center;
+        }
+
+        .personnage-list img {
+            width: 200px; 
+            height: 300px;
+            border-radius: 5px;
+            margin-right: 10px; 
+        }
+
+        .personnage-list li p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="/image/logo_blog_manga.png.webp" alt="Blog Manga Logo" class="logo">
+        </a>
+        <h1>One Piece</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="dbz.html">Dragon Ball Z</a></li>
+                <li><a href="bleach.html">Bleach</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="manga-details">
+        <h2>Résumé</h2>
+        <p>One Piece est l'une des séries les plus populaires et les plus emblématiques du manga et de l'animation japonaise. Créée par Eiichiro Oda, cette aventure épique suit Monkey D. Luffy et son équipage, les Chapeaux de Paille, alors qu'ils voguent à travers les mers du monde à la recherche du plus grand trésor de tous les temps : le One Piece. Ce trésor légendaire est caché quelque part dans le Grand Line, une mer où l'aventure et le danger se mêlent.
+
+            Au-delà de la quête pour devenir le roi des pirates, One Piece est une véritable histoire d'amitié, de courage et de persévérance. Luffy et ses amis affrontent des ennemis redoutables, des mystères inédits, et surmontent de nombreux obstacles, tout en restant fidèles à leurs rêves et à leurs idéaux. L'univers richement détaillé de One Piece est peuplé de personnages hauts en couleur, de créatures fantastiques et de batailles épiques qui ont captivé des millions de fans à travers le monde.
+            
+            Que vous soyez un vieux fan ou un nouveau venu dans l'univers de One Piece, embarquez dans cette aventure incroyable, où chaque île, chaque pirate, et chaque moment vous surprendra. Luffy et ses compagnons vous attendent pour un voyage inoubliable à la recherche du One Piece, le trésor ultime, mais aussi de la liberté.</p>
+
+        <h2>Personnages Principaux</h2>
+        <ul class="personnage-list">
+            <li>
+                <img src="https://i.pinimg.com/736x/22/f4/28/22f428b979f5c5d3ee0c4ca5a38c582a.jpg" alt="Luffy"> Luffy
+            </li>
+            <li>
+                <img src="https://i.pinimg.com/564x/f6/38/42/f63842fe83b73b35cae137423b7b5dae.jpg" alt="Zoro"> Zoro
+            </li>
+            <li>
+                <img src="https://i.pinimg.com/736x/de/68/72/de687288d20534ce972baf923ae1c947.jpg" alt="Nami"> Nami
+            </li>
+            <li>
+                <img src="https://i.pinimg.com/564x/1e/92/2c/1e922cbf438d498e9167d43e7e336e36.jpg" alt="Sanji"> Sanji
+            </li>
+            <li>
+                <img src="https://i.pinimg.com/564x/4e/fe/6e/4efe6e98e1cd00a505bfbca7a8493bac.jpg" alt="Usopp"> Usopp
+            </li>
+        </ul>
+    </section>
+    <section class="manga-videos">
+        <h2>Vidéos de présentation</h2>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/sS6AODLnKqo?si=jE6TPj1Cl_1BDfTs" title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/LHTYpWI3S6Q?si=QWF8sGenKFAWw9b" title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/hQagzXbyp9I?si=E8gyxPi_kkVl3h-m" title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/M-MKmqiTGTI?si=zwTCbMfxPVPufscT" title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </section>
+    <h2>Commentaires</h2>
+        <textarea placeholder="Laisse ton commentaire ici..."></textarea>
+        <button type="button">Envoyer</button>
+
+    <footer>
+        <p>© 2024 Blog Manga - Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
