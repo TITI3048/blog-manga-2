@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Dragon Ball Z - Blog Manga</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .video-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            max-width: 560px;
+            height: 315px;
+            border: none;
+        }
+
+        .personnage-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between; 
+            gap: 20px;
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .personnage-list li {
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+            text-align: center;
+        }
+
+        .personnage-list img {
+            width: 200px; 
+            height: 300px;
+            border-radius: 5px;
+            margin-right: 10px; 
+        }
+
+        .personnage-list li p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="/image/logo_blog_manga.png.webp" alt="Blog Manga Logo" class="logo">
+        </a>
+        <h1>Dragon Ball Z</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="onepiece.html">One Piece</a></li>
+                <li><a href="bleach.html">Bleach</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="manga-details">
+        <h2>Résumé</h2>
+        <p>Dragon Ball Z est une série de mangas et d'animes célèbre créée par Akira Toriyama. Elle suit les aventures de Goku, un guerrier Saiyan, et de ses amis alors qu'ils protègent la Terre des menaces extraterrestres et de puissants adversaires. Avec des combats légendaires, la série explore des thèmes de courage, de sacrifice et d'amitié.</p>
+
+        <h2>Personnages Principaux</h2>
+        <ul class="personnage-list">
+            <li>
+                <img src="https://example.com/goku.jpg" alt="Goku"> Goku
+            </li>
+            <li>
+                <img src="https://example.com/vegeta.jpg" alt="Vegeta"> Vegeta
+            </li>
+            <li>
+                <img src="https://example.com/gohan.jpg" alt="Gohan"> Gohan
+            </li>
+            <li>
+                <img src="https://example.com/piccolo.jpg" alt="Piccolo"> Piccolo
+            </li>
+            <li>
+                <img src="https://example.com/trunks.jpg" alt="Trunks"> Trunks
+            </li>
+        </ul>
+    </section>
+
+    <section class="manga-videos">
+        <h2>Vidéos de présentation</h2>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/example1" title="YouTube video player" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/example2" title="YouTube video player" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/example2" title="YouTube video player" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/example2" title="YouTube video player" allowfullscreen></iframe>
+        </div>
+    </section>
+    <h2>Commentaires</h2>
+    <textarea placeholder="Laisse ton commentaire ici..."></textarea>
+    <button type="button">Envoyer</button>
+
+    <footer>
+        <p>© 2024 Blog Manga - Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

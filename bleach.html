@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Bleach - Blog Manga</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .video-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            max-width: 560px;
+            height: 315px;
+            border: none;
+        }
+
+        .personnage-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between; 
+            gap: 20px;
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .personnage-list li {
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+            text-align: center;
+        }
+
+        .personnage-list img {
+            width: 200px; 
+            height: 300px;
+            border-radius: 5px;
+            margin-right: 10px; 
+        }
+
+        .personnage-list li p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="/image/logo_blog_manga.png.webp" alt="Blog Manga Logo" class="logo">
+        </a>
+        <h1>Bleach</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="onepiece.html">One Piece</a></li>
+                <li><a href="dbz.html">Dragon Ball Z</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="manga-details">
+        <h2>Résumé</h2>
+        <p>Bleach, créé par Tite Kubo, raconte l'histoire d'Ichigo Kurosaki, un jeune homme doté de pouvoirs de Shinigami. Il doit protéger les vivants des âmes perdues et affronter de puissants ennemis dans le monde des esprits, la Soul Society. Bleach est connu pour ses combats spectaculaires et ses personnages inoubliables.</p>
+
+        <h2>Personnages Principaux</h2>
+        <ul class="personnage-list">
+            <li>
+                <img src="https://example.com/ichigo.jpg" alt="Ichigo"> Ichigo
+            </li>
+            <li>
+                <img src="https://example.com/rukia.jpg" alt="Rukia"> Rukia
+            </li>
+            <li>
+                <img src="https://example.com/renji.jpg" alt="Renji"> Renji
+            </li>
+            <li>
+                <img src="https://example.com/orihime.jpg" alt="Orihime"> Orihime
+            </li>
+            <li>
+                <img src="https://example.com/ishida.jpg" alt="Ishida"> Ishida
+            </li>
+        </ul>
+    </section>
+
+    <section class="manga-videos">
+        <h2>Vidéos de présentation</h2>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Pi_sIP-wjC0?si=JD8WhY-kHjLoKuls" title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Eh6a3Lg8ZlQ?si=FytIrloxAoPZY0vN" title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/T_4uo9t4mlk?si=e0Y2eExMijbFD5CG" title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/sVRkxRecxEY?si=LmJYjoHLd1ZaP1YC" title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </section>
+    <h2>Commentaires</h2>
+    <textarea placeholder="Laisse ton commentaire ici..."></textarea>
+    <button type="button">Envoyer</button>
+
+    <footer>
+        <p>© 2024 Blog Manga - Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
