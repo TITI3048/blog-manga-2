@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -46,6 +47,47 @@
         .personnage-list li p {
             margin: 0;
         }
+
+        .resource-carousel {
+            display: flex;
+            overflow-x: auto;
+            padding: 20px;
+            gap: 20px;
+            scroll-snap-type: x mandatory;
+        }
+
+        .resource-carousel a {
+            flex: 0 0 auto;
+            text-align: center;
+            width: 300px;
+            scroll-snap-align: center;
+            text-decoration: none;
+            color: black;
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .resource-carousel a:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .resource-carousel img {
+            width: 100%;
+            height: 150px;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .resource-carousel h3 {
+            margin: 10px 0 5px;
+        }
+
+        .resource-carousel p {
+            padding: 0 10px 10px;
+        }
     </style>
 </head>
 <body>
@@ -65,24 +107,26 @@
 
     <section class="manga-details">
         <h2>Résumé</h2>
-        <p>Bleach, créé par Tite Kubo, raconte l'histoire d'Ichigo Kurosaki, un jeune homme doté de pouvoirs de Shinigami. Il doit protéger les vivants des âmes perdues et affronter de puissants ennemis dans le monde des esprits, la Soul Society. Bleach est connu pour ses combats spectaculaires et ses personnages inoubliables.</p>
+        <p>Bleach, créé par Tite Kubo, raconte l'histoire d'Ichigo Kurosaki, un jeune homme doté de pouvoirs de Shinigami.
+            Il doit protéger les vivants des âmes perdues et affronter de puissants ennemis dans le monde des esprits, la Soul Society.
+            Bleach est connu pour ses combats spectaculaires et ses personnages inoubliables.</p>
 
         <h2>Personnages Principaux</h2>
         <ul class="personnage-list">
             <li>
-                <img src="https://example.com/ichigo.jpg" alt="Ichigo"> Ichigo
+                <img src="https://i.pinimg.com/236x/19/ce/78/19ce783422f2e1fcd0dce84aad48da55.jpg" alt="Ichigo"> Ichigo
             </li>
             <li>
-                <img src="https://example.com/rukia.jpg" alt="Rukia"> Rukia
+                <img src="https://i.pinimg.com/236x/b3/23/ba/b323ba57e27de7b4cd02a83ec71f9fb9.jpg" alt="Rukia"> Rukia
             </li>
             <li>
-                <img src="https://example.com/renji.jpg" alt="Renji"> Renji
+                <img src="https://i.pinimg.com/474x/cc/64/4c/cc644c49e182a994a5f17e5fd115f148.jpg" alt="Renji"> Renji
             </li>
             <li>
-                <img src="https://example.com/orihime.jpg" alt="Orihime"> Orihime
+                <img src="https://i.pinimg.com/236x/a7/99/ca/a799ca45a24c44d6752ccbc63aa77c2d.jpg" alt="Orihime"> Orihime
             </li>
             <li>
-                <img src="https://example.com/ishida.jpg" alt="Ishida"> Ishida
+                <img src="https://i.pinimg.com/236x/5b/bd/21/5bbd2167f79ebe1e2c28ff47c7641639.jpg" alt="Ishida"> Ishida
             </li>
         </ul>
     </section>
@@ -95,14 +139,25 @@
 
             <iframe width="560" height="315" src="https://www.youtube.com/embed/Eh6a3Lg8ZlQ?si=FytIrloxAoPZY0vN" title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/T_4uo9t4mlk?si=e0Y2eExMijbFD5CG" title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/sVRkxRecxEY?si=LmJYjoHLd1ZaP1YC" title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
     </section>
+
+    <section>
+        <h2>Découvrir des Scans et Animes</h2>
+        <div class="resource-carousel">
+            <a href="https://anime-sama.fr/" target="_blank" rel="noopener">
+                <img src="https://anime-sama.fr/assets/logo.png" alt="Anime Sama">
+                <h3>Anime Sama</h3>
+                <p>Découvrez une large gamme d'animes en streaming.</p>
+            </a>
+            <a href="https://www.scan-vf.net/" target="_blank" rel="noopener">
+                <img src="https://www.scan-vf.net/assets/scanvf-logo.png" alt="Scan VF">
+                <h3>Scan VF</h3>
+                <p>Lisez vos mangas préférés en français.</p>
+            </a>
+        </div>
+    </section>
+
     <h2>Commentaires</h2>
     <textarea placeholder="Laisse ton commentaire ici..."></textarea>
     <button type="button">Envoyer</button>

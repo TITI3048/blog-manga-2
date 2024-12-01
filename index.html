@@ -5,6 +5,228 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Manga</title>
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Styles généraux */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header a img.logo {
+            height: 50px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.8rem;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        header nav ul li a:hover {
+            color: #ddd;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            max-width: 800px;
+        }
+
+        section h2 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .articles .article-card {
+            margin-bottom: 15px;
+        }
+
+        .articles .article-card a {
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Carrousel : Styles */
+.carousel-container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+}
+
+.carousel-track-container {
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+    transform: scale(0.95);
+}
+
+.carousel-slide.current-slide {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
+.carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+    
+        .calendar {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+
+        .calendar-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .calendar-header button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .calendar-header button:hover {
+            background-color: #0056b3;
+        }
+
+        .calendar-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 10px;
+        }
+
+        .day {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-align: center;
+            padding: 10px;
+            font-size: 0.9rem;
+            position: relative;
+        }
+
+        .day span {
+            font-weight: bold;
+            color: #555;
+        }
+
+        .event {
+            margin-top: 5px;
+            padding: 5px;
+            background: #28a745;
+            color: #fff;
+            border-radius: 3px;
+            font-size: 0.8rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .event.shonen-jump {
+            background: #FF4500;
+        }
+
+        .event:hover {
+            background: #006400;
+        }
+
+        .event.shonen-jump:hover {
+            background: #d73a00;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -26,7 +248,7 @@
         <div class="article-card">
             <h3>Titre de l'article</h3>
             <p>Masashi Kishimoto et Mikio Ikemoto, dessinateurs de la saga « Naruto », deux maîtres du manga ovationnés à Paris</p>
-                <a href="https://www.lemonde.fr/pixels/article/2024/08/28/masashi-kishimoto-createur-de-naruto-et-mikio-ikemoto-son-successeur-sur-boruto-deux-maitres-du-manga-ovationnes-a-paris_6297329_4408996.html">Lire l'article complet</a>
+            <a href="https://www.lemonde.fr/pixels/article/2024/08/28/masashi-kishimoto-createur-de-naruto-et-mikio-ikemoto-son-successeur-sur-boruto-deux-maitres-du-manga-ovationnes-a-paris_6297329_4408996.html">Lire l'article complet</a>
         </div>
         <div class="article-card">
             <h3>Titre de l'article</h3>
@@ -35,8 +257,7 @@
         </div>
         <div class="article-card">
             <h3>Titre de l'article</h3>
-            <p>« One Piece » : la saga d’un manga phénomène
-                RÉCIT. Le manga culte est apparu en 1997.</p>
+            <p>« One Piece » : la saga d’un manga phénomène</p>
             <a href="https://www.lepoint.fr/monde/one-piece-la-saga-d-un-manga-phenomene-14-08-2022-2486320_24.php">Lire l'article complet</a>
         </div>
     </section>
@@ -44,25 +265,29 @@
     <section class="history-manga">
         <h2>Histoire du Manga</h2>
         <p>Le <strong>manga</strong>, terme japonais signifiant "image dérisoire" ou "dessin irresponsable," est une forme de bande dessinée qui s’est imposée comme l'un des piliers de la culture populaire japonaise et a conquis un public mondial. Ses origines remontent à plusieurs siècles. Dès le 12e siècle, des rouleaux illustrés comme le <em>Choju-jinbutsu-giga</em> (parfois considéré comme le premier manga) montraient des scènes humoristiques d’animaux anthropomorphes, préfigurant le style dynamique et expressif qui caractérisera plus tard les mangas.</p>
-        
-        <p>Cependant, le manga moderne prend vraiment forme dans les années d’après-guerre, sous l’influence de dessinateurs comme <strong>Osamu Tezuka</strong>, souvent surnommé le "dieu du manga." Inspiré par les dessins animés occidentaux, notamment les œuvres de Walt Disney, Tezuka crée des personnages expressifs aux grands yeux, qui deviennent une signature de son style. Avec des séries emblématiques comme <em>Astro Boy</em> (1952), Tezuka établit les bases du manga narratif : il développe des histoires en profondeur, offrant des personnages complexes et abordant des thèmes variés, allant du fantastique à la science-fiction, en passant par des problématiques humaines et sociales.</p>
-
-        <p>Les années 1970 voient la diversification du manga, avec l’émergence de genres destinés à des publics variés. Le <strong>shônen</strong> (pour jeunes garçons) et le <strong>shôjo</strong> (pour jeunes filles) se développent avec des séries comme <em>Dragon Ball</em> d’Akira Toriyama et <em>Candy Candy</em> de Yumiko Igarashi. Ces mangas s’imposent comme des phares de leur catégorie, tandis que des genres plus matures, comme le <strong>seinen</strong> (pour jeunes adultes), viennent enrichir le paysage du manga avec des récits plus sombres et psychologiques, tels que <em>Akira</em> de Katsuhiro Otomo.</p>
-
-        <p>Dans les années 1980 et 1990, le manga atteint un succès phénoménal hors du Japon, en grande partie grâce à l’exportation de séries animées inspirées des mangas (connues sous le nom d’"anime"). Des œuvres comme <em>Sailor Moon</em>, <em>Dragon Ball Z</em>, et <em>Naruto</em> marquent des générations de fans à travers le monde. Ce succès international pousse les éditeurs japonais à traduire et diffuser leurs mangas en Europe, aux États-Unis et au-delà.</p>
-
-        <p>Aujourd’hui, le manga est un phénomène culturel global, capable de toucher toutes les tranches d’âge. Son influence se retrouve dans des domaines aussi variés que la mode, la musique, le cinéma, et même les jeux vidéo. Que ce soit pour ses dessins captivants, ses récits profonds ou ses personnages emblématiques, le manga continue d’évoluer, restant au cœur de la créativité et de l’innovation culturelle.</p>
     </section>
 
     <section class="manga-gallery">
         <h2>Galerie Manga</h2>
-        <div class="gallery-container">
-            <img src="/image/solo leveling.jpg" alt="Image manga 1">
-            <img src="/image/luffy.jpg" alt="Image manga 2">
-            <img src="/image/dbz.jpg" alt="Image manga 3">
-            <img src="/image/bleach6.jpg" alt="Image manga 4">
-            <img src="/image/naruto2.jpg" alt="Image manga 5">
-            <img src="/image/one punch man2.jpg" alt="Image manga 6">
+        <div class="carousel-container">
+            <button class="carousel-button prev" id="prevButton">←</button>
+            <div class="carousel-track-container">
+                <ul class="carousel-track">
+                    <li class="carousel-slide current-slide">
+                        <img src="/image/solo leveling.jpg" alt="Image manga 1">
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="/image/luffy.jpg" alt="Image manga 2">
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="/image/dbz.jpg" alt="Image manga 3">
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="/image/bleach6.jpg" alt="Image manga 4">
+                    </li>
+                </ul>
+            </div>
+            <button class="carousel-button next" id="nextButton">→</button>
         </div>
     </section>
 
@@ -82,7 +307,7 @@
             <a href="dbz.html">Voir plus</a>
         </div>
 
-        <div class="manga-card" id="bleach">
+        <div class="manga-card" id="bleach">      
             <img src="/image/bleach2.jpg" alt="Bleach">
             <h3>Bleach</h3>
             <p>Accompagne Ichigo dans sa lutte contre les Hollows et découvre le monde des Shinigami !</p>
@@ -104,8 +329,25 @@
         </div>
     </section>
 
+    <section class="calendar-section">
+        <h2>Calendrier des Sorties Manga</h2>
+        <div class="calendar">
+            <div class="calendar-header">
+                <button id="prevMonth">← Mois Précédent</button>
+                <h2 id="currentMonth">Décembre 2024</h2>
+                <button id="nextMonth">Mois Suivant →</button>
+            </div>
+            <div class="calendar-grid" id="calendarGrid">
+                <!-- Contenu dynamique ajouté via JS -->
+            </div>
+        </div>
+    </section>
+
     <footer>
         <p>© 2024 Blog Manga - Tous droits réservés.</p>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
+
